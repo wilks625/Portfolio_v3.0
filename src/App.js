@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import {Route, BrowserRouter as Router, Switch} from 
+import {Route, BrowserRouter as Router, Switch, Link} from 
 "react-router-dom";
 
 import Home from './components/pages/Home';
@@ -13,7 +13,14 @@ function App() {
   return (
     <Router>
       <div className="container">
-        <p>hello!</p>
+        <nav>
+          <ul>
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/about">About Me</Link></li>
+            <li><Link to="/projects">Projects</Link></li>
+            <li><Link to="/contact">Contact Info</Link></li>
+          </ul>
+        </nav>
       </div>
 
       <Switch>
