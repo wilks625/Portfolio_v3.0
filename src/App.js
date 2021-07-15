@@ -1,12 +1,31 @@
 import logo from './logo.svg';
 import './App.css';
-import {Route, BrowserRouter as Router} from 
+import {Route, BrowserRouter as Router, Switch} from 
 "react-router-dom";
+
+import Home from './components/pages/Home';
+import About from './components/pages/About';
+import Projects from './components/pages/Projects';
+import Contact from './components/pages/Contact';
+
 
 function App() {
   return (
     <Router>
+      <div className="container">
+        <p>hello!</p>
+      </div>
 
+      <Switch>
+        <Route path="/about" component={About} />
+        <Route path="/projects" component={Projects} />
+        <Route path="/contact" component={Contact} />
+        <Route path="/" component={Home} />
+      </Switch>
+
+
+
+      
     </Router>
     // <div className="App">
     //   <header className="App-header">
