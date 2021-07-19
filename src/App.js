@@ -2,7 +2,10 @@ import logo from './logo.svg';
 import './App.css';
 import {Route, BrowserRouter as Router, Switch, Link} from 
 "react-router-dom";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
+import Navbar from './components/Navbar';
+import SocialButtonsPage from './components/Footer.js';
 import Home from './components/pages/Home';
 import About from './components/pages/About';
 import Projects from './components/pages/Projects';
@@ -12,24 +15,18 @@ import Contact from './components/pages/Contact';
 function App() {
   return (
     <Router>
-      <div className="container">
-        <nav>
-          <ul>
-            <li><Link to="/">Home</Link></li>
-            <li><Link to="/about">About Me</Link></li>
-            <li><Link to="/projects">Projects</Link></li>
-            <li><Link to="/contact">Contact Info</Link></li>
-          </ul>
-        </nav>
-      </div>
+      
+        
+      <Navbar/>
 
+      
+      <SocialButtonsPage/>
       <Switch>
-        <Route path="/about" component={About} />
+        {/* <Route path="/about" component={About} /> */}
         <Route path="/projects" component={Projects} />
         <Route path="/contact" component={Contact} />
         <Route path="/" component={Home} />
       </Switch>
-
 
 
       
