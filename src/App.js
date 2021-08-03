@@ -15,7 +15,7 @@ function App() {
   return (
     <Router basename={process.env.PUBLIC_URL + "/Portfolio_v3.0/"} >
       <Navbar />
-      <Switch basename={process.env.PUBLIC_URL + "/"}>
+      <Switch basename={process.env.PUBLIC_URL + "/Portfolio_v3.0/"}>
         <Route path="/projects/" component={Projects} />
         <Route path="/contact/" component={Contact} />
         <Route path="/" component={Home} />
