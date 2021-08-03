@@ -33,11 +33,11 @@ https://wilks625.github.io/Portfolio_v3.0/#/contact
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) | [View License](https://opensource.org/licenses/MIT)
 
 ## Installation 
-Run the following command at the root of your project: 
+Run the following command at the root of your project:  
 npm i OR npm install
 
 ## Usage
-Run the following command at the root of your project:
+Run the following command at the root of your project:  
 npm start  
 
 
