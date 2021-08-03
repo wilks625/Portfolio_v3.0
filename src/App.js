@@ -15,10 +15,10 @@ function App() {
   return (
     <Router basename={process.env.PUBLIC_URL + "/Portfolio_v3.0/"} >
       <Navbar />
-      <Switch basename={process.env.PUBLIC_URL + "/Portfolio_v3.0/"}>
-        <Route path="/projects/" component={Projects} />
-        <Route path="/contact/" component={Contact} />
-        <Route path="/" component={Home} />
+      <Switch >
+        <Route path="/Portfolio_v3.0/#/projects" component={Projects} />
+        <Route path="/Portfolio_v3.0/#/contact" component={Contact} />
+        <Route path="/Portfolio_v3.0/#/" component={Home} />
       </Switch>
       <SocialButtonsPage />
     </Router>
