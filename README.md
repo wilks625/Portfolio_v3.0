@@ -1,10 +1,20 @@
 # 20 React: React Portfolio
 
 ## Description
-This this is an updated portfolio that utilizes React for the front end.
+This this is an updated portfolio that utilizes React for the front end. It has a Home page, Projects page, and Contact Page, but I was only able to display the home page for now.
+The page uses bootstrap and is mobile responsive.
 
 Link to deployed application:
- 
+ https://wilks625.github.io/Portfolio_v3.0/#/
+
+If you would like to interact with the other pages open these links as well
+Projects:
+https://wilks625.github.io/Portfolio_v3.0/#/projects
+
+Contact:
+https://wilks625.github.io/Portfolio_v3.0/#/contact
+
+
 
 
 ## Table of Contents
