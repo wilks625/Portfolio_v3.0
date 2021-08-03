@@ -1,6 +1,8 @@
 import logo from "./logo.svg";
 import "./App.css";
-import { Route, HashRouter as Router, Switch, Link } from "react-router-dom";
+// import { Route, HashRouter as Router, Switch, Link } from "react-router-dom";
+import { HashRouter, Route, Link, Switch } from "react-router-dom";
+
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import Navbar from "./components/Navbar";
@@ -11,16 +13,15 @@ import Contact from "./components/pages/Contact";
 
 function App() {
   return (
-    <Router basename={process.env.PUBLIC_URL}>
+    <HashRouter basename="/">
       <Navbar />
-
       <SocialButtonsPage />
       <Switch>
         <Route exact path="/projects" component={Projects} />
         <Route exact path="/contact" component={Contact} />
         <Route exact path="/" component={Home} />
       </Switch>
-    </Router>
+    </HashRouter>
   );
 }
 
