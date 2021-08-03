@@ -7,9 +7,9 @@ import profilePic from "../images/headshot-cropped.jpeg";
 export default function About() {
   return (
     <div>
-      <Container  id="home-container">
+      <Container id="home-container">
         <Row>
-          <Col >
+          <Col>
             <Image id="headshot" src={profilePic} roundedCircle />
           </Col>
           <Col>
@@ -17,20 +17,21 @@ export default function About() {
             <p>
               My name is Stephen and I currently work in the healthcare field as
               a Physical Therapist Assistant. And while I love what I do, I have
-              always been curious about the tech industry.{" "}
+              always been curious about the tech industry, specifically
+              programming.{" "}
             </p>
             <p>
-              I am now a student at the University of Richmond coding bootcamp
-              where I will learn to become a full-stack web developer. I am
-              enjoying the new challenge and am excited to continue to learn and
-              eventually, one day, start my career as a software engineer.
+              I nearing the end of the University of Richmond coding bootcamp.
+              At this bootcamp we have learned the skills required to work as a
+              full-stack web developer. I have enjoyed the journey and am now
+              excited to start my career as a programmer.
             </p>
 
             <h3 id="home-title">Technologies </h3>
             <Row>
               <Col>
                 <h3 id="home-title">Frontend </h3>
-                <ul >
+                <ul>
                   <li>JavaScript</li>
                   <li>HTML</li>
                   <li>CSS</li>
@@ -43,7 +44,7 @@ export default function About() {
               </Col>
               <Col>
                 <h3 id="home-title">Backend </h3>
-                <ul >
+                <ul>
                   <li>SQL</li>
                   <li>APIs</li>
                   <li>REST</li>

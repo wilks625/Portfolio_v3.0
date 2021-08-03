@@ -1,7 +1,6 @@
 import React from "react";
 import "../App.css";
 
-// import logo from "../logo2.png"
 import { Nav } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
@@ -12,7 +11,6 @@ const Navbar = () => {
   return (
     <Nav className="navbar navbar-expand-lg navbar-light bg-dark">
       <div className="container">
-        {/* <a className="navbar-brand" href="#"><img className="logo" src={logo} alt="logo..." /></a> */}
         <button
           className="navbar-toggler"
           type="button"
@@ -27,31 +25,11 @@ const Navbar = () => {
 
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav ml-auto">
-            {/* <Nav.Item className="nav-item active ">
-              <Nav.Link className="nav-link" id="navButton" href="/">Home</Nav.Link>
-            </Nav.Item>
-
-            <Nav.Item className="nav-item ">
-              <Nav.Link className="nav-link" id="navButton" href="/about">About Me</Nav.Link>
-            </Nav.Item>
-
-            <Nav.Item className="nav-item ">
-              <Nav.Link className="nav-link" id="navButton" href="/projects">Projects</Nav.Link>
-            </Nav.Item>
-
-            <Nav.Item className="nav-item ">
-              <Nav.Link className="nav-link" id="navButton" href="/contact">Contact Info</Nav.Link>
-            </Nav.Item> */}
-
             <li className="nav-item">
               <a className="nav-link" href="/">
                 Home
               </a>
             </li>
-
-            {/* <li className="nav-item">
-              <a className="nav-link" href="/about">About Me</a>
-            </li> */}
 
             <li className="nav-item">
               <a className="nav-link" href="/projects">
