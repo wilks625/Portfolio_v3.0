@@ -13,12 +13,12 @@ import Contact from "./components/pages/Contact";
 
 function App() {
   return (
-    <Router basename={process.env.PUBLIC_URL + "/Portfolio_v3.0/"} >
+    <Router basename={process.env.PUBLIC_URL} >
       <Navbar />
       <Switch >
-        <Route path="/Portfolio_v3.0/#/projects" component={Projects} />
-        <Route path="/Portfolio_v3.0/#/contact" component={Contact} />
-        <Route path="/Portfolio_v3.0/#/" component={Home} />
+        <Route exact path="/projects" component={Projects} />
+        <Route exact path="/contact" component={Contact} />
+        <Route exact path="/" component={Home} />
       </Switch>
       <SocialButtonsPage />
     </Router>
