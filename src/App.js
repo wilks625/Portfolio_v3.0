@@ -1,7 +1,7 @@
 import logo from "./logo.svg";
 import "./App.css";
-// import { Route, HashRouter as Router, Switch, Link } from "react-router-dom";
-import { HashRouter, Route, Link, Switch } from "react-router-dom";
+// import { BrowserRouter as Router, Switch, Link, Route } from "react-router-dom";
+import { HashRouter as Router, Route, Link, Switch } from "react-router-dom";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -13,15 +13,15 @@ import Contact from "./components/pages/Contact";
 
 function App() {
   return (
-    <HashRouter basename="/">
+    <Router basename={process.env.PUBLIC_URL + "/Portfolio_v3.0/"} >
       <Navbar />
-      <SocialButtonsPage />
-      <Switch>
-        <Route exact path="/projects" component={Projects} />
-        <Route exact path="/contact" component={Contact} />
-        <Route exact path="/" component={Home} />
+      <Switch basename={process.env.PUBLIC_URL + "/"}>
+        <Route path="/projects/" component={Projects} />
+        <Route path="/contact/" component={Contact} />
+        <Route path="/" component={Home} />
       </Switch>
-    </HashRouter>
+      <SocialButtonsPage />
+    </Router>
   );
 }
 
