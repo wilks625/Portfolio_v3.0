@@ -16,9 +16,9 @@ function App() {
 
       <SocialButtonsPage />
       <Switch>
-        <Route path="/projects" component={Projects} />
-        <Route path="/contact" component={Contact} />
-        <Route path="/" component={Home} />
+        <Route exact path="/projects" component={Projects} />
+        <Route exact path="/contact" component={Contact} />
+        <Route exact path="/" component={Home} />
       </Switch>
     </Router>
   );
